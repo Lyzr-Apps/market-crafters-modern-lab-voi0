@@ -1,0 +1,32 @@
+{
+  "agent_name": "Content Writer Agent",
+  "agent_id": "69a28814d6fa89687c20afcd",
+  "description": "Writes blog posts, social media copy, ad text, email content, and landing page copy following brand voice guidelines and platform-specific requirements",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "content_pieces": [
+      {
+        "platform": "string",
+        "content_type": "string",
+        "title": "string",
+        "body": "string",
+        "word_count": "number",
+        "hashtags": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "content_pieces": [
+      {
+        "platform": "sample string",
+        "content_type": "sample string",
+        "title": "sample string",
+        "body": "sample string",
+        "word_count": 0,
+        "hashtags": "sample string"
+      }
+    ]
+  }
+}

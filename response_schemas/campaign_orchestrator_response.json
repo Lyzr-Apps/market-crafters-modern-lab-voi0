@@ -1,0 +1,80 @@
+{
+  "agent_name": "Campaign Orchestrator",
+  "agent_id": "69a2883be72641e0c6070afe",
+  "description": "Coordinates content creation and SEO analysis workflows; routes campaign brief to sub-agents, aggregates written content with SEO recommendations into a unified campaign deliverable",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "campaign_title": "string",
+    "campaign_summary": "string",
+    "content_blocks": [
+      {
+        "platform": "string",
+        "content_type": "string",
+        "title": "string",
+        "body": "string",
+        "word_count": "number",
+        "hashtags": "string"
+      }
+    ],
+    "seo_analysis": {
+      "keywords": [
+        {
+          "keyword": "string",
+          "search_volume": "string",
+          "difficulty": "string",
+          "recommendation": "string"
+        }
+      ],
+      "content_score": "number",
+      "meta_title": "string",
+      "meta_description": "string",
+      "optimization_tips": [
+        "string"
+      ],
+      "competitor_gaps": [
+        {
+          "gap": "string",
+          "opportunity": "string"
+        }
+      ]
+    }
+  },
+  "example_response": {
+    "campaign_title": "sample string",
+    "campaign_summary": "sample string",
+    "content_blocks": [
+      {
+        "platform": "sample string",
+        "content_type": "sample string",
+        "title": "sample string",
+        "body": "sample string",
+        "word_count": 0,
+        "hashtags": "sample string"
+      }
+    ],
+    "seo_analysis": {
+      "keywords": [
+        {
+          "keyword": "sample string",
+          "search_volume": "sample string",
+          "difficulty": "sample string",
+          "recommendation": "sample string"
+        }
+      ],
+      "content_score": 0,
+      "meta_title": "sample string",
+      "meta_description": "sample string",
+      "optimization_tips": [
+        "sample string"
+      ],
+      "competitor_gaps": [
+        {
+          "gap": "sample string",
+          "opportunity": "sample string"
+        }
+      ]
+    }
+  }
+}

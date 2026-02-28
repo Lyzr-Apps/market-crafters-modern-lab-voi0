@@ -1,0 +1,44 @@
+{
+  "agent_name": "Video Brief Agent",
+  "agent_id": "69a2883bd6fa89687c20afcf",
+  "description": "Creates detailed video production briefs including storyboard outlines, scene descriptions, script drafts, shot lists, and platform-specific video format recommendations",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "video_title": "string",
+    "concept_overview": "string",
+    "target_duration": "string",
+    "target_platform": "string",
+    "scenes": [
+      {
+        "scene_number": "number",
+        "description": "string",
+        "narration": "string",
+        "visual_notes": "string",
+        "duration": "string",
+        "shot_type": "string"
+      }
+    ],
+    "music_suggestions": "string",
+    "format_recommendations": "string"
+  },
+  "example_response": {
+    "video_title": "sample string",
+    "concept_overview": "sample string",
+    "target_duration": "sample string",
+    "target_platform": "sample string",
+    "scenes": [
+      {
+        "scene_number": 0,
+        "description": "sample string",
+        "narration": "sample string",
+        "visual_notes": "sample string",
+        "duration": "sample string",
+        "shot_type": "sample string"
+      }
+    ],
+    "music_suggestions": "sample string",
+    "format_recommendations": "sample string"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "app_name": "Marketing Command Center",
+  "agents": {
+    "campaign_orchestrator": {
+      "agent_id": "69a2883be72641e0c6070afe",
+      "name": "Campaign Orchestrator",
+      "type": "manager",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "top_p": 1,
+      "managed_agents": [
+        "69a28814d6fa89687c20afcd",
+        "69a2881563d7518fcdafa1de"
+      ],
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false
+    },
+    "content_writer": {
+      "agent_id": "69a28814d6fa89687c20afcd",
+      "name": "Content Writer Agent",
+      "type": "sub-agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.75,
+      "top_p": 0.95,
+      "managed_by": "69a2883be72641e0c6070afe",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false
+    },
+    "seo_analyst": {
+      "agent_id": "69a2881563d7518fcdafa1de",
+      "name": "SEO Analyst Agent",
+      "type": "sub-agent",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "top_p": 1,
+      "managed_by": "69a2883be72641e0c6070afe",
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false
+    },
+    "graphic_designer": {
+      "agent_id": "69a2883b00b22915dd81e1aa",
+      "name": "Graphic Designer Agent",
+      "type": "independent",
+      "provider": "google",
+      "model": "gemini-2.5-pro",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "image_output_config": {
+        "model": "dall-e-3"
+      },
+      "voice_config": null,
+      "file_output": false
+    },
+    "video_brief": {
+      "agent_id": "69a2883bd6fa89687c20afcf",
+      "name": "Video Brief Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "image_output_config": null,
+      "voice_config": null,
+      "file_output": false
+    }
+  }
+}

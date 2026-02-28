@@ -1,0 +1,48 @@
+{
+  "agent_name": "SEO Analyst Agent",
+  "agent_id": "69a2881563d7518fcdafa1de",
+  "description": "Performs keyword research, analyzes search trends, provides on-page SEO scoring, competitor content gap analysis, meta tag recommendations, and content optimization suggestions",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "keywords": [
+      {
+        "keyword": "string",
+        "search_volume": "string",
+        "difficulty": "string",
+        "recommendation": "string"
+      }
+    ],
+    "content_score": "number",
+    "meta_title": "string",
+    "meta_description": "string",
+    "optimization_tips": ["string"],
+    "competitor_gaps": [
+      {
+        "gap": "string",
+        "opportunity": "string"
+      }
+    ]
+  },
+  "example_response": {
+    "keywords": [
+      {
+        "keyword": "sample string",
+        "search_volume": "sample string",
+        "difficulty": "sample string",
+        "recommendation": "sample string"
+      }
+    ],
+    "content_score": 0,
+    "meta_title": "sample string",
+    "meta_description": "sample string",
+    "optimization_tips": ["sample string"],
+    "competitor_gaps": [
+      {
+        "gap": "sample string",
+        "opportunity": "sample string"
+      }
+    ]
+  }
+}
